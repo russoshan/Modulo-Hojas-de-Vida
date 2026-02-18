@@ -1,0 +1,372 @@
+/* Estilos de la pagina Hojas de Vida
+   Curso Desarrollo Web Frontend
+   Universidad del Magdalena */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14.825px;
+    line-height: 22.2374px;
+    color: rgb(29, 33, 37);
+    background-color: #f8f9fa;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---- ENCABEZADO ---- */
+
+.encabezado {
+    background-color: #ffffff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #dce3ea;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.encabezado-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-campus {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.linea-separadora {
+    width: 1px;
+    height: 28px;
+    background-color: #cccccc;
+}
+
+.titulo-curso {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(29, 33, 37);
+}
+
+.encabezado-derecha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-campana,
+.icono-mensaje,
+.icono-chat,
+.icono-apps {
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.icono-campana:hover,
+.icono-mensaje:hover,
+.icono-chat:hover,
+.icono-apps:hover {
+    color: #084C85;
+}
+
+/* Placeholder de foto de perfil del usuario */
+.foto-perfil-usuario {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #dce3ea;
+    background-color: #c8d8ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #084C85;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.foto-perfil-usuario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nombre-usuario {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(29, 33, 37);
+}
+
+.icono-configuracion {
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* ---- NAVEGACION ---- */
+
+.navegacion {
+    background-color: #084C85;
+    height: 44px;
+    display: flex;
+    align-items: stretch;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navegacion a {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 0 13px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+}
+
+.navegacion a:hover {
+    background-color: #063a66;
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.navegacion a.activo {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+/* ---- CONTENIDO PRINCIPAL ---- */
+
+.contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 15px 60px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: rgb(29, 33, 37);
+}
+
+/* ---- BARRA DE BUSQUEDA ---- */
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.caja-busqueda {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #b0bec5;
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 240px;
+    overflow: hidden;
+}
+
+.caja-busqueda input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(29, 33, 37);
+    flex: 1;
+    background: transparent;
+}
+
+.caja-busqueda input::placeholder {
+    color: #b0b8c1;
+}
+
+.caja-busqueda i {
+    padding: 8px 11px;
+    color: #888;
+    font-size: 14px;
+}
+
+.link-busqueda {
+    color: #084C85;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ---- GRILLA DE TARJETAS ---- */
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ---- TARJETA ESTUDIANTE ---- */
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #dce3ea;
+    border-radius: 8px;
+    padding: 26px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 6px 18px rgba(8, 76, 133, 0.14);
+    transform: translateY(-3px);
+}
+
+/* Placeholder de foto con iniciales */
+.foto-estudiante {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #dce3ea;
+    background-color: #c8d8ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #084C85;
+    flex-shrink: 0;
+}
+
+/* Para cuando se agregue foto real dentro del div */
+.foto-estudiante img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.nombre-estudiante {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(29, 33, 37);
+    margin-top: 4px;
+}
+
+.cargo-estudiante {
+    font-size: 13px;
+    color: #666666;
+}
+
+.boton-ver {
+    background-color: #084C85;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 28px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 4px;
+    transition: background-color 0.2s;
+}
+
+.boton-ver:hover {
+    background-color: #063a66;
+}
+
+/* ---- REDES SOCIALES ---- */
+
+.redes {
+    display: flex;
+    gap: 7px;
+    margin-top: 3px;
+}
+
+.red-social {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    transition: opacity 0.2s;
+}
+
+.red-social:hover {
+    opacity: 0.8;
+}
+
+.linkedin { background-color: #0a66c2; }
+.twitter  { background-color: #1da1f2; }
+.facebook { background-color: #1877f2; }
+
+/* ---- PIE DE PAGINA ---- */
+
+.pie-pagina {
+    background-color: #063a66;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 13px;
+}
+
+.pie-pagina a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pie-pagina a:hover {
+    color: #ffffff;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 900px) {
+    .grilla-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .grilla-tarjetas {
+        grid-template-columns: 1fr;
+    }
+    .navegacion {
+        overflow-x: auto;
+    }
+    .nombre-usuario {
+        display: none;
+    }
+}

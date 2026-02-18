@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modulo de acceso a las hojas de vida de los estudiantes del curso Desarrollo Web Frontend">
+    <meta name="author" content="Shania Russo">
+    <title>Hojas de Vida de Estudiantes - Desarrollo Web Frontend</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+
+        <div class="encabezado-izquierda">
+            <img src="img/logo-campus.png" alt="Logo Campus Virtual Unimagdalena" class="logo-campus">
+            <div class="linea-separadora"></div>
+            <h1 class="titulo-curso">PROGRAMACION WEB</h1>
+        </div>
+
+        <div class="encabezado-derecha">
+            <i class="fa-solid fa-grip icono-apps"></i>
+            <div class="linea-separadora"></div>
+            <i class="fa-solid fa-envelope icono-mensaje"></i>
+            <i class="fa-solid fa-message icono-chat"></i>
+            <i class="fa-solid fa-bell icono-campana"></i>
+            <div class="linea-separadora"></div>
+            <!-- Placeholder foto de perfil - para foto real pon <img> dentro del div -->
+            <div class="foto-perfil-usuario" img="">JR</div>
+            <span class="nombre-usuario">JOHAN ALBERTO ROBLES</span>
+            <i class="fa-solid fa-gear icono-configuracion"></i>
+        </div>
+
+    </header>
+
+    <!-- Navegacion -->
+    <nav class="navegacion">
+        <a href="#">Contenido</a>
+        <a href="#">Asignaciones</a>
+        <a href="#">Foros</a>
+        <a href="#">Cuestionarios</a>
+        <a href="#">Progreso de la clase</a>
+        <a href="#">Valoraciones</a>
+        <a href="#" class="activo">Evaluacion</a>
+        <a href="#">Herramientas</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+
+        <h1 class="titulo-pagina">Hojas de Vida de Estudiantes</h1>
+
+        <!-- Barra de busqueda -->
+        <div class="barra-busqueda">
+            <div class="caja-busqueda">
+                <input type="text" id="campoBusqueda" placeholder="Buscar..." onkeyup="buscar()">
+                <i class="fa-solid fa-magnifying-glass" onclick="buscar()" style="cursor:pointer;"></i>
+            </div>
+            <a href="#" class="link-busqueda">Mostrar opciones de busqueda</a>
+        </div>
+
+        <!-- Grilla de tarjetas de estudiantes -->
+        <section class="grid-tarjetas">
+
+            <!-- Tarjeta 1 -->
+            <article class="tarjeta">
+                <!-- Para foto real: poner <img src="img/foto1.jpg" alt="David Hasbum"> dentro del div -->
+                <div class="foto-estudiante">DH</div>
+                <h2 class="nombre-estudiante">David Daniel Hasbum Suarez</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">JF</div>
+                <h2 class="nombre-estudiante">Juan Francisco Gonzalez Pacheco</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">SJ</div>
+                <h2 class="nombre-estudiante">Sara Judith Jimenez Arias</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 4 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">ID</div>
+                <h2 class="nombre-estudiante">Isabel Duran Alvear</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 5 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">RC</div>
+                <h2 class="nombre-estudiante">Ricardo Jose Cevallos Paz</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 6 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">
+                    <img src="img/foto_shaniarusso.png" alt="SR">
+                </div>
+                <h2 class="nombre-estudiante">Shania Maia Russo De Avila</h2>
+                <p class="cargo-estudiante">Estudiante de Ing. de Sistemas</p>
+                <a href="https://russoshan.github.io/Portafolio-Profesional/" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/shania-russo-4862083b0" class="red-social linkedin" title="LinkedIn" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 7 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">YP</div>
+                <h2 class="nombre-estudiante">Yulieth Paola Ortega Escobar</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="https://russoshan.github.io/Portafolio-Profesional/" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 8 -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">AR</div>
+                <h2 class="nombre-estudiante">Ana Rosa Lopez Sierra</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="https://russoshan.github.io/Portafolio-Profesional/" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 9 - espacio para un compañero mas -->
+            <article class="tarjeta">
+                <div class="foto-estudiante">PP</div>
+                <h2 class="nombre-estudiante">Pepito Perez</h2>
+                <p class="cargo-estudiante">Estudiante de Programacion Web</p>
+                <a href="https://russoshan.github.io/Portafolio-Profesional/" target="_blank" class="boton-ver">Ver</a>
+                <div class="redes">
+                    <a href="#" class="red-social linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="red-social twitter" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="red-social facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Universidad del Magdalena &mdash; Campus Virtual. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de busqueda -->
+    <script>
+        function buscar() {
+            var texto = document.getElementById('campoBusqueda').value.toLowerCase().trim();
+            var tarjetas = document.querySelectorAll('.tarjeta');
+
+            for (var i = 0; i < tarjetas.length; i++) {
+                var nombre = tarjetas[i].querySelector('.nombre-estudiante').textContent.toLowerCase();
+                if (!texto || nombre.indexOf(texto) !== -1) {
+                    tarjetas[i].style.display = '';
+                } else {
+                    tarjetas[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
