@@ -249,23 +249,6 @@
         <p>&copy; 2026 Universidad del Magdalena &mdash; Campus Virtual. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Script de busqueda -->
-    <script>
-        function buscar() {
-            var texto = document.getElementById('campoBusqueda').value.toLowerCase().trim();
-            var tarjetas = document.querySelectorAll('.tarjeta');
-
-            for (var i = 0; i < tarjetas.length; i++) {
-                var nombre = tarjetas[i].querySelector('.nombre-estudiante').textContent.toLowerCase();
-                if (!texto || nombre.indexOf(texto) !== -1) {
-                    tarjetas[i].style.display = '';
-                } else {
-                    tarjetas[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
-
 </body>
 
 </html>
