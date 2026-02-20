@@ -1,5 +1,5 @@
 /* Estilos de la pagina Hojas de Vida
-   Curso Desarrollo Web Frontend
+   Curso Programacion Web
    Universidad del Magdalena */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
@@ -162,7 +162,7 @@ a {
 .contenido {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 30px 15px 60px;
+    padding: 70px 15px 60px;
 }
 
 .titulo-pagina {
@@ -335,13 +335,45 @@ a {
 
 /* ---- PIE DE PAGINA ---- */
 
+.barra-fija {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    height: 60px;
+    background-color: #ffffff;
+    padding: 10px 24px;
+    z-index: 10;
+    opacity: 0.95; 
+}
+
+
+.boton-listo {
+    background-color: #084C85;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+}
+
+.boton-listo:hover {
+    background-color: #063a66;
+}
+
 .pie-pagina {
     background-color: #063a66;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     padding: 20px 15px;
     font-size: 13px;
+    margin-bottom: 60px;
 }
+
 
 .pie-pagina a {
     color: rgba(255, 255, 255, 0.7);
